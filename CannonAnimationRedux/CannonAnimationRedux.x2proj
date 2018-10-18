@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>7bfb2f23-37bb-4b69-84c1-c5f85d3a496d</Guid>
+    <Name>Cannon Animation Redux</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>CannonAnimationRedux</AssemblyName>
+    <RootNamespace>CannonAnimationRedux</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\CannonAnimationRedux\" />
+    <Folder Include="Src\CannonAnimationRedux\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComCannon.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Cannon_Cinematic.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Cannon_Male.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\Cannon_Female.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\CannonAnimationRedux\Classes\CAEventListenerTemplate.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\CannonAnimationRedux\Classes\CAShellMapMatinee.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\CannonAnimationRedux\Classes\DropShipMatinee_Actor.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\CannonAnimationRedux\Classes\CAEventListener_StrategyListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\CannonAnimationRedux\Classes\X2DownloadableContentInfo_CannonAnimationRedux.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
